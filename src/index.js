@@ -25,13 +25,15 @@ let globalToken = {
   expires: 0
 };
 
-module.exports = (appid, secret) => {
+module.exports = (appid, secret, getAccessTokenFromStore = null, setAccessTokenToStore = null) => {
   assert.ok(appid, 'The 1st param `appid` is required.');
   assert.ok(secret, 'The 2nd param `secret` is required.');
 
   const getAccessToken = () => {
-    if (globalToken.expires > new Date()) {
-      return Promise.resolve(globalToken.token);
+    let tokenData = globalToken;
+    if (getAccessTokenFromStore) tokenData = getAccessTokenFromStore();
+    if (tokenData.expires > new Date()) {
+      return Promise.resolve(tokenData.token);
     }
     return axios.get('/cgi-bin/token', {
       params: {
@@ -42,6 +44,7 @@ module.exports = (appid, secret) => {
         token,
         expires: new Date() + (expires - 2e2) * 1e3
       };
+      if (setAccessTokenToStore) setAccessTokenToStore(globalToken);
       return token;
     });
   };
