@@ -4,7 +4,7 @@
 
 > 已经疯狂得不能用代码行数（总计`89`行，包含空行和 debug）来衡量该项目了，代码仅有 `1,310`字节（净化后）。
 
-[![github](https://img.shields.io/github/followers/rojer95.svg?style=social&label=Followers)](https://github.com/rojer95) [![npm](https://img.shields.io/npm/v/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![npm](https://img.shields.io/npm/dm/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![npm](https://img.shields.io/npm/dt/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![codebeat badge](https://codebeat.co/badges/dcda6ad6-46a4-4178-900a-aaf9ea056321)](https://codebeat.co/projects/github-com-rojer-mp-sdk-rojer-master)
+[![github](https://img.shields.io/github/followers/rojer95.svg?style=social&label=Followers)](https://github.com/rojer95) [![npm](https://img.shields.io/npm/v/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![npm](https://img.shields.io/npm/dm/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![npm](https://img.shields.io/npm/dt/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer)
 
 Minimum, Flexible, Scalable.
 
