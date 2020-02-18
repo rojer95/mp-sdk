@@ -49,8 +49,8 @@ module.exports = (appid, secret, getAccessTokenFromStore = null, setAccessTokenT
     });
   };
 
-  const makeRequest = ({ url, data = {}, module }) => getAccessToken()
-    .then(token => axios.post(url, data, { params: { access_token: token }, ...(module === 'wxacode' ? { responseType: 'arraybuffer' } : {}) }));
+  const makeRequest = ({ url, data = {}, module, params = {} }) => getAccessToken()
+    .then(token => axios.post(url, data, { params: { access_token: token, ...params }, ...(module === 'wxacode' ? { responseType: 'arraybuffer' } : {}) }));
 
   const originObj = {
     crypto: {
@@ -76,7 +76,7 @@ module.exports = (appid, secret, getAccessTokenFromStore = null, setAccessTokenT
       if (modules.indexOf(module) !== -1) {
         const loadModule = methods => Object.keys(methods).reduce((o, method) => {
           Object.assign(o, {
-            [method]: data => makeRequest({ url: methods[method], data, module })
+            [method]: (data, params = {}) => makeRequest({ url: methods[method], data, module, params })
           });
           return o;
         }, {});
