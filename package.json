@@ -1,9 +1,12 @@
 {
-  "name": "mp-sdk",
+  "name": "mp-sdk-rojer",
   "version": "0.2.2",
   "description": "微信小程序服务器端SDK。Wechat Mini Program (mp) Serverside SDK",
   "keywords": [
-    "sdk", "mp", "wechat", "mini-program"
+    "sdk",
+    "mp",
+    "wechat",
+    "mini-program"
   ],
   "main": "src/index.js",
   "repository": "https://github.com/rojer95/mp-sdk.git",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-willin": "^1.0.2"
+    "eslint-config-willin": "^1.0.2",
+    "prettier-eslint": "^9.0.1"
   }
 }
