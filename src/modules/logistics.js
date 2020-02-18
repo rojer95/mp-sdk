@@ -10,5 +10,9 @@ module.exports = {
   getContact: '/cgi-bin/express/delivery/contact/get',
   previewTemplate: '/cgi-bin/express/delivery/template/preview',
   updateBusiness: '/cgi-bin/express/delivery/service/business/update',
-  updatePath: '/cgi-bin/express/delivery/path/update'
+  updatePath: '/cgi-bin/express/delivery/path/update',
+  batchGetOrder: '/cgi-bin/express/business/order/batchget',
+  bindAccount: '/cgi-bin/express/business/account/bind',
+  getAllAccount: '/cgi-bin/express/business/account/getall',
+  testUpdateOrder: '/cgi-bin/express/business/test_update_order'
 };
