@@ -2,6 +2,8 @@
 
 比官方 SDK 更好用的微信小程序服务器端 SDK。
 
+此包修改自[原作者willin的mp-sdk](https://github.com/willin/mp-sdk)，完善了一些接口与token的同一管理功能。
+
 > 已经疯狂得不能用代码行数（总计`89`行，包含空行和 debug）来衡量该项目了，代码仅有 `1,310`字节（净化后）。
 
 [![github](https://img.shields.io/github/followers/rojer95.svg?style=social&label=Followers)](https://github.com/rojer95) [![npm](https://img.shields.io/npm/v/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![npm](https://img.shields.io/npm/dm/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer) [![npm](https://img.shields.io/npm/dt/mp-sdk-rojer.svg)](https://npmjs.org/package/mp-sdk-rojer)
